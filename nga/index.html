@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>v3 Architecture</title>
+		<title>NGA</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -93,7 +93,7 @@
 
 				<section>
 					<h2>Offline caching of assets</h2>
-					<p>using Service Worker (JS, HTML, CSS, images, ...)</p>
+					<p>using Service Worker (JS, HTML, CSS, images, ...) <a href="https://github.com/gaia-components/serviceworkerware">gaia-components/serviceworkerware</a></p>
 
 					<aside class="notes">
 						<ul>
@@ -155,16 +155,15 @@
 
 				<section>
 					<h2>'Cross-thread' communication</h2>
-					<p>Learning from Gecko's 'IPDL'</p>
-					<small><a href="http://github.com/gaia-components/threads">gaia-components/threads</a></small>
+					<p>Learning from Gecko's 'IPDL' <a href="http://github.com/gaia-components/threads">gaia-components/threads</a></p>
 				</section>
 
 				<section>
-					<img class="stretch" src="lib/images/multi-threaded-1.svg"/>
+					<img style="width:50%" src="lib/images/multi-threaded-1.svg"/>
 				</section>
 
 				<section>
-					<img class="stretch" src="lib/images/multi-threaded-2.svg"/>
+					<img style="width:50%" src="lib/images/multi-threaded-2.svg"/>
 				</section>
 
 				<section>
@@ -183,7 +182,7 @@
 				</section>
 
 				<section>
-					<img class="stretch" src="lib/images/multi-threaded-3.svg"/>
+					<img style="width:50%" src="lib/images/multi-threaded-3.svg"/>
 				</section>
 
 				<section>
@@ -197,6 +196,15 @@
 					<aside class="notes">
 						The dawn the Service Worker will shift how web-applications are authored. It's a good time to pitch a new approach to web-app development; an approach that gives the web its best shot at competing with native.
 					</aside>
+				</section>
+
+				<section>
+					<h2>Current achitecture</h2>
+					<ul>
+						<li class="fragment">Cannot fully leverage device capabilities</li>
+						<li class="fragment">Highly prone to regressions</li>
+						<li class="fragment">Doesn't enbrace the web's strengths</li>
+					</ul>
 				</section>
 
 				<section>
